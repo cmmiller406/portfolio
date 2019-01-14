@@ -1,0 +1,73 @@
+header {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-size: 26px;
+    font-family: 'Yellowtail', cursive;
+    background-color: white;
+    color: darkcyan;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: darkcyan;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 28%;
+}
+
+.logo {
+    display: flex;
+    background-image: url("logo.png");
+    background-size: contain; 
+    border-radius: 5px;
+    height: 120px;
+    width: 120px;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 28%;
+}
+
+.home{
+    margin-right: 100px;
+}
+
+.resume {
+    margin-right: 100px;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.photo {
+    background-image: url("self-photo.jpg");
+    background-size: contain; 
+    border-radius: 5px;
+    height: 200px;
+    width: 300px;
+
+}
+
+.bio {
+    font-size: 20px;
+    text-align: center;
+}
