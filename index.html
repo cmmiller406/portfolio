@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="MainModule">
+<html ng-app="App">
 
 <head>
     <meta charset="utf-8" />
@@ -11,25 +11,16 @@
 </head>
 
 <body>
-    <header>
-        <section class="header-left">
-            <a class="home" href="index.html">Home</a>
-            <a class="projects" href="projects.html">Projects</a>
-        </section>
-        <section class=logo></section>
-        <section class="header-right">
-            <a class="resume" href="resume.html">Resume</a>
-            <a class="contact" href="contact.html">Contact</a>
-        </section>
-    </header>
-    <section class="main-info">
-        <section class="photo"></section>
-        <section class="bio">
-            <p>christina marie.</p>
-            <p>web developer.</p>
-        </section>
+    <ng-view></ng-view>
 
-    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+    <script src="app/module.js"></script>
+    <script src="app/components/home.js"></script>
+    <script src="app/components/about.js"></script>
+    <script src="app/components/projects.js"></script>
+    <script src="app/components/contact.js"></script>
+
 </body>
 
 </html>

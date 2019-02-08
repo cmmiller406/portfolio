@@ -4,17 +4,19 @@ header {
     width: 100%;
 }
 
-a {
-    text-decoration: none;
+h2 {
+    border: none;
     font-size: 26px;
     font-family: 'Yellowtail', cursive;
     background-color: white;
     color: darkcyan;
     padding: 8px;
+    padding-right: 14px;
     border-radius: 5px;
+
 }
 
-a:hover {
+h2:hover {
     background-color: darkcyan;
     color: white;
 }
