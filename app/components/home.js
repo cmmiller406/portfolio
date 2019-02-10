@@ -2,17 +2,23 @@
 
 const home = {
     template: `
-    <header>
-        <section class="header-left">
-            <h2 ng-click="$ctrl.goToHome()" class="home">Home</h2>
-            <h2 ng-click="$ctrl.goToProjects()" class="projects">Projects</h2>
+    <section class="home-container">
+        <section class="home-top">
+            <h2 ng-click="$ctrl.goToHome()" class="home-home">Home</h2>
         </section>
-        <section class=logo></section>
-        <section class="header-right">
-            <h2 ng-click="$ctrl.goToAbout()" class="resume" >About</h2>
-            <h2 ng-click="$ctrl.goToContact()" class="contact">Contact</h2>
+        <section class="home-middle-container">
+            <section class="home-left">
+                <h2 ng-click="$ctrl.goToAbout()" class="home-resume" >About</h2>
+            </section>
+            <section class=home-logo></section>
+            <section class="home-right">
+                <h2 ng-click="$ctrl.goToProjects()" class="home-projects">Projects</h2>
+            </section>
         </section>
-    </header>
+        <section class="home-bottom">
+            <h2 ng-click="$ctrl.goToContact()" class="home-contact">Contact</h2>
+        </section>
+    </section>
    `,
     controller: ["$location", function ($location) {
         const vm = this;

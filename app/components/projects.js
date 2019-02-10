@@ -3,16 +3,20 @@
 const projects = {
     template: `
     <header>
-    <section class="header-left">
-        <h2 ng-click="$ctrl.goToHome()" class="home">Home</h2>
-        <h2 ng-click="$ctrl.goToProjects()" class="projects">Projects</h2>
+        <section class="header-left">
+            <h2 ng-click="$ctrl.goToHome()" class="home">Home</h2>
+            <h2 ng-click="$ctrl.goToAbout()" class="resume" >About</h2>
+            
+        </section>
+        <section class=logo></section>
+        <section class="header-right">
+            <h2 ng-click="$ctrl.goToProjects()" class="projects">Projects</h2>
+            <h2 ng-click="$ctrl.goToContact()" class="contact">Contact</h2>
+        </section>
+    </header>
+    <section class="projects-container">
+        
     </section>
-    <section class=logo></section>
-    <section class="header-right">
-        <h2 ng-click="$ctrl.goToAbout()" class="resume" >About</h2>
-        <h2 ng-click="$ctrl.goToContact()" class="contact">Contact</h2>
-    </section>
-</header>
    `,
     controller: ["$location", function ($location) {
         const vm = this;
