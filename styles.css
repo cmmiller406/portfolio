@@ -4,7 +4,7 @@ header {
     width: 100%;
 }
 
-h2 {
+h2, h3 {
     border: none;
     font-size: 26px;
     font-family: 'Yellowtail', cursive;
@@ -15,15 +15,24 @@ h2 {
     border-radius: 5px;
 }
 
+
+
 h2:hover {
     background-color: #35a7ab;
     color: white;
 }
 
+p, li {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+span {
+    font-weight: 900;
+}
+
 .home-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 100%;
     height: 100vh;
 }
@@ -106,7 +115,7 @@ h2:hover {
     margin-right: 100px;
 }
 
-.resume {
+.projects {
     margin-right: 100px;
 }
 
@@ -130,4 +139,32 @@ h2:hover {
 .bio {
     font-size: 20px;
     text-align: center;
+}
+
+.projects-container {
+    display:flex;
+    flex-direction: row;
+    margin: 40px;
+   
+}
+
+.project-info {
+    margin-left: 20px;
+}
+
+.project-display {
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.about {
+    margin: 0 20px 20px 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50px;
 }
