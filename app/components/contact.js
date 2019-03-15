@@ -17,15 +17,17 @@ const contact = {
     <section class="main-info">
         <section class="photo"></section>
         <section class="bio">
-            <p>christina marie.</p>
-            <p>web developer.</p>
+            <p id="name">christina marie.</p>
         </section>
     </section>
     <section class="contact-form">
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Your Message">
+        <form action="https://formspree.io/cmmiller.406@gmail.com" method="POST" >
+            <p class="contact-header">Want to collaborate? Feel free to reach out!</p>
+            <section class="contact-nameemail">
+                <input id="contact-name" type="text" placeholder="Name" name="name">
+                <input id="contact-email" type="email" placeholder="Email" name="name">
+            </section>
+            <textarea id="contact-message" placeholder="Your Message" name="name"></textarea>
             <button>Submit</button>
         </form>
     </section>

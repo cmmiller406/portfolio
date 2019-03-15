@@ -15,8 +15,6 @@ h2, h3 {
     border-radius: 5px;
 }
 
-
-
 h2:hover {
     background-color: #35a7ab;
     color: white;
@@ -24,6 +22,12 @@ h2:hover {
 
 p, li {
     font-family: 'Josefin Sans', sans-serif;
+}
+
+#name {
+    font-family: 'Yellowtail', cursive;
+    font-size: 40px;
+    margin: 5px 5px 0px 5px;
 }
 
 span {
@@ -167,4 +171,84 @@ ul {
     flex-direction: column;
     flex-wrap: wrap;
     height: 50px;
+}
+
+.contact-form {
+    height: 500px;
+    width: 100vw;
+    position: absolute;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: #35a7ab;
+    padding: 30px;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.contact-header {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+input {
+    padding: 4px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+::placeholder {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    padding: 4px;
+    color: black;
+}
+
+.contact-nameemail {
+    width: 100%;
+}
+
+#contact-name {
+    width: 40%;
+    height: 20px;
+    margin-left: 0;
+    margin-right: 24px;
+}
+
+#contact-email {
+    width: 50%;
+    height: 20px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#contact-message {
+    width: 99%;
+    height: 150px;
+    text-align: start;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+button {
+    width: 140px;
+    height: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #35a7ab;
+}
+
+button:hover {
+    cursor: pointer;
 }
